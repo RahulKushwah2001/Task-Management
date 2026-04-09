@@ -17,7 +17,6 @@ interface Task {
 
 export default function TaskBoard() {
   const { id } = useParams();
-
   const [tasks, setTasks] = useState<Task[]>([]);
   const [open, setOpen] = useState(false);
   const [title, setTitle] = useState("");
